@@ -38,9 +38,9 @@ services:
         tty: true
         depends_on:
             - wordpress
-        image: mfuezesi/wordmove
+        image: welaika/wordmove
         restart: on-failure:5
-        container_name: my_wordmove  # (+) RENAME THIS IF CONTAINER NAME ALREADY EXISTS
+        container_name: somesite_wordmove  # (+)
         volumes:
             - ./config:/home
             - ./public:/var/www/html
