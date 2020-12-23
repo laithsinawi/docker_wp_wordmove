@@ -38,7 +38,7 @@ services:
         tty: true
         depends_on:
             - wordpress
-        image: welaika/wordmove
+        image: welaika/wordmove # Latest version of wordmove with WP Cli integration
         restart: on-failure:5
         container_name: somesite_wordmove  # (+)
         volumes:
