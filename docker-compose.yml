@@ -1,7 +1,7 @@
 version: '3'
 services:
     database:
-        image: mysql:5.7
+        image: mariadb # works with Mac M1 processor
         command:
             - "--character-set-server=utf8"
             - "--collation-server=utf8_unicode_ci"
